@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Duque</title>
+    <style>
+        @font-face {
+            font-family: 'Acme Gothic';
+            src: url('fonnts_com-Acme_Gothic_Compressed_Black.otf') format('opentype');
+            font-weight: 900;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        .home-container {
+            width: 100vw;
+            height: 100vh;
+            background: url('BACKGROUND.jpg') center/cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .corner-link {
+            position: absolute;
+            font-family: 'Acme Gothic', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #2C3E28;
+            text-decoration: none;
+            text-transform: uppercase;
+            z-index: 10;
+        }
+        
+        .top-left { top: 25px; left: 25px; }
+        .top-right { top: 25px; right: 25px; }
+        .bottom-left { bottom: 25px; left: 25px; }
+        .bottom-right { bottom: 25px; right: 25px; }
+        
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .sun-character {
+            width: 480px;
+            height: auto;
+            margin-bottom: -15px;
+        }
+        
+        .main-logo {
+            width: 240px;
+            height: auto;
+            margin-bottom: 22px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .social-icons img {
+            width: 34px;
+            height: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <a href="tour.html" class="corner-link top-left">TOURCITO</a>
+        <a href="musiquita.html" class="corner-link top-right">MUSIQUITA</a>
+        <a href="noticias.html" class="corner-link bottom-left">NOTICIAS</a>
+        <a href="registro.html" class="corner-link bottom-right">REGISTRO</a>
+        
+        <div class="center-content">
+            <img src="SOL.png" alt="Sol" class="sun-character">
+            <img src="LOGO-JUAN_D.png" alt="Juan Duque" class="main-logo">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/juanduque/" target="_blank"><img src="INSTA.png" alt="Instagram"></a>
+                <a href="https://open.spotify.com/intl-es/artist/49ggXUsjVHl7BwwaiPUCn6" target="_blank"><img src="SPOTY.png" alt="Spotify"></a>
+                <a href="https://www.youtube.com/channel/UCKWyNTz2PpFMpUr722qNEyw" target="_blank"><img src="YOU.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@juanduque?lang=es" target="_blank"><img src="TIK.png" alt="TikTok"></a>
+                <a href="https://www.facebook.com/duque.juanjo/" target="_blank"><img src="FACE.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
